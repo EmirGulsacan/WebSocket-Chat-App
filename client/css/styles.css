@@ -1,0 +1,46 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#thisSocketId {
+    font-weight: bold;
+}
+
+#allClients {
+    margin-top: 20px;
+}
+
+#allClients li {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#allClients li:hover {
+    background-color: #e9ecef;
+}
+
+#messages {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#messages li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#messages li strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#messages li.self {
+    background-color: #d4edda;
+    text-align: right;
+}
+
+#messages li:not(.self) {
+    background-color: #f8d7da;
+    text-align: left;
+}

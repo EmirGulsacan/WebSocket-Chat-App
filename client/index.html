@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h5>Your Socket ID</h5>
+                <div id="thisSocketId" class="alert alert-primary text-center"></div>
+                <ul id="allClients" class="list-group">
+                    <!-- Connected clients will be displayed here -->
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <input type="text" id="txtSocketId" class="form-control" placeholder="Target Client" disabled>
+                    </div>
+                    <div class="card-body">
+                        <ul id="messages" class="list-group mb-3">
+                            <!-- Messages will be displayed here -->
+                        </ul>
+                        <textarea id="txtMessage" class="form-control" placeholder="Enter your message here..." rows="3"></textarea>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button id="btnSendMessage" class="btn btn-success">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

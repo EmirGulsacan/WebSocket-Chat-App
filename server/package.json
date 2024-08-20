@@ -1,0 +1,30 @@
+{
+    "name": "socket-chat-app",
+    "version": "1.0.0",
+    "description": "A simple chat application using Node.js and Socket.IO.",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "socket.io": "^2.2.0"
+    },
+    "devDependencies": {},
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/emirgulsacan/websocket-chat-app.git"
+    },
+    "keywords": [
+      "nodejs",
+      "socket.io",
+      "chat",
+      "real-time"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/emirgulsacan/websocket-chat-app/issues"
+    },
+    "homepage": "https://github.com/emirgulsacan/websocket-chat-app#readme"
+  }
+  
